@@ -1,9 +1,10 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-html, body{
+html,
+body {
   background-color: rgb(255, 255, 255);
 }
 .App {
@@ -12,25 +13,24 @@ html, body{
   align-items: center;
   justify-content: center;
   padding-top: 15px;
-  font-family: Lato,sans-serif;
+  font-family: Lato, sans-serif;
 }
-.freecodecamo-logo-contenedor{
+.freecodecamo-logo-contenedor {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 20px;
 }
-.freecamp-logo{
+.freecamp-logo {
   height: 50px;
 }
-.contenedor-principal{
+.contenedor-principal {
   height: 550px;
   min-width: 600px;
   flex-wrap: wrap;
-  flex-direction: column;;
+  flex-direction: column;
   display: flex;
   align-items: center;
   justify-content: center;
-
 }

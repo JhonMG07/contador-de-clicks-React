@@ -7,11 +7,12 @@ import { useState } from "react"; /*Usamos hooks para el state */
 function App() {
   /*tenemos que crear el estado, vamos a ocupar hooks(componentes funcionales) */
 
-  const [numClics,setNumClics] = useState(0); /*Como tal seria [variable,nombreFuncion] */
+  const [numClics, setNumClics] =
+    useState(0); /*Como tal seria [variable,nombreFuncion] */
   /*Se crean los estados y el valor que nos permite actualizarlo. y al final le damos un valor inicial */
 
   const manejarClic = () => {
-    setNumClics(numClics+1);
+    setNumClics(numClics + 1);
   };
 
   const reiniciarContador = () => {
@@ -28,12 +29,15 @@ function App() {
         />
       </div>
       <div className="contenedor-principal">
-      <Contador numeroClic={numClics} />
+        <Contador 
+        numeroClic={numClics}
+        />
 
         <Boton 
         texto="Clic" 
         esBotonDeClic={true} 
-        manejarClic={manejarClic} />
+        manejarClic={manejarClic}
+        />
 
         <Boton
           texto="Reiniciar"
