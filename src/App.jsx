@@ -29,21 +29,18 @@ function App() {
         />
       </div>
       <div className="contenedor-principal">
-        <Contador 
-        numeroClic={numClics}
-        />
+        <Contador numeroClic={numClics} />
 
-        <Boton 
-        texto="Clic" 
-        esBotonDeClic={true} 
-        manejarClic={manejarClic}
-        />
+        <Boton texto="Clic" esBotonDeClic={true} manejarClic={manejarClic} />
 
         <Boton
           texto="Reiniciar"
           esBotonDeClic={false}
           manejarClic={reiniciarContador}
         />
+        <div className="author">
+          Jhon Meza
+          </div>
       </div>
     </div>
   );
